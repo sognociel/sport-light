@@ -1,0 +1,28 @@
+.HealthContainer {
+  width: inherit;
+
+  &-filter {
+    width: inherit;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  &-runtime {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-icon {
+    font-size: 30px;
+  }
+
+  &-month {
+    background-color: none;
+    border: none;
+    font-size: 18px;
+    font-family: "dalmoori";
+  }
+}

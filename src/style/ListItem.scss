@@ -1,0 +1,27 @@
+.ListItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+  box-sizing: border-box;
+  background-color: rgb(255, 250, 223);
+  border: 2px dotted rgb(255, 140, 0);
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+
+  &-date,
+  &-category,
+  &-time,
+  &-feeling {
+    width: 20%;
+  }
+
+  &-remove {
+    font-size: 40px;
+
+    &:hover {
+      color: red;
+    }
+  }
+}
