@@ -5,7 +5,7 @@ import HealthContainer from "./components/HealthContainer";
 import { MdSportsHandball } from "react-icons/md";
 
 function App() {
-  const [healthData, setHeadthData] = useState([]);
+  const [healthData, setHealthData] = useState([]);
 
   const dataId = useRef(0);
   const addHealthData = (date, category, time, feeling) => {
@@ -29,12 +29,12 @@ function App() {
       time: time,
       feeling: feeling,
     };
-    setHeadthData([...healthData, newHealthData]);
+    setHealthData([...healthData, newHealthData]);
     dataId.current += 1;
   };
 
   const removeHealthData = (targetId) => {
-    setHeadthData(healthData.filter((item) => item.id !== targetId));
+    setHealthData(healthData.filter((item) => item.id !== targetId));
   };
 
   return (
