@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import ListItem from "./ListItem";
 import "../style/HealthContainer.scss";
 import { BiRun } from "react-icons/bi";
+import { RiEmotionSadLine } from "react-icons/ri";
 
 const HealthContainer = ({ healthData, removeHealthData }) => {
   const toDay = new Date();
@@ -38,13 +39,24 @@ const HealthContainer = ({ healthData, removeHealthData }) => {
         />
       </div>
       <div className="HealthContainer-list">
-        {filterData.map((item) => (
-          <ListItem
-            filterData={item}
-            key={item.id}
-            removeHealthData={removeHealthData}
-          />
-        ))}
+        {filterData.length > 0 ? (
+          <>
+            {filterData.map((item) => (
+              <ListItem
+                filterData={item}
+                key={item.id}
+                removeHealthData={removeHealthData}
+              />
+            ))}
+          </>
+        ) : (
+          <>
+            <div className="HealthContainer-none">
+              이번 달 운동 기록이 없네요!
+              <RiEmotionSadLine style={{ fontSize: "30px" }} />
+            </div>
+          </>
+        )}
       </div>
     </div>
   );

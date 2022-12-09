@@ -1,28 +1,40 @@
+@mixin flexCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .HealthContainer {
   width: inherit;
 
   &-filter {
-    width: inherit;
-    display: flex;
+    @include flexCenter();
     justify-content: space-around;
-    align-items: center;
-    margin-bottom: 50px;
+    width: inherit;
+    margin-bottom: 5rem;
   }
 
   &-runtime {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexCenter();
   }
 
   &-icon {
-    font-size: 30px;
+    font-size: 3rem;
+  }
+
+  &-work {
+    font-size: 2rem;
   }
 
   &-month {
     background-color: none;
     border: none;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-family: "dalmoori";
+  }
+
+  &-none {
+    @include flexCenter();
+    font-size: 2rem;
   }
 }

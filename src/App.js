@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import "./App.css";
+import "./App.scss";
 import Collect from "./components/Collect";
 import HealthContainer from "./components/HealthContainer";
 import { MdSportsHandball } from "react-icons/md";
@@ -40,7 +40,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <MdSportsHandball />
+        <MdSportsHandball style={{ fontSize: "5rem" }} />
         Sport Light
       </header>
       <Collect addHealthData={addHealthData} />
