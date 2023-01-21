@@ -1,6 +1,8 @@
 import React from "react";
-import "../style/ListItem.scss";
+
 import { CiCircleRemove } from "react-icons/ci";
+
+import "../style/ListItem.scss";
 
 const ListItem = ({ filterData, removeHealthData }) => {
   return (

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import "../style/Collect.scss";
 
 const Collect = ({ addHealthData }) => {

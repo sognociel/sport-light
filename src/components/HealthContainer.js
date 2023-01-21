@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
-import ListItem from "./ListItem";
-import "../style/HealthContainer.scss";
+
 import { BiRun } from "react-icons/bi";
 import { RiEmotionSadLine } from "react-icons/ri";
+
+import ListItem from "./ListItem";
+
+import "../style/HealthContainer.scss";
 
 const HealthContainer = ({ healthData, removeHealthData }) => {
   const toDay = new Date();
